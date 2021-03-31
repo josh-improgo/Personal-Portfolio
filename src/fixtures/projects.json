@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Password Manager",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat ut justo ac mollis. Pellentesque at ligula in ligula ultrices convallis a in nulla. Nulla id tortor quis justo iaculis mattis. Phasellus in neque ipsum. Fusce sed nisl dui.",
+        "tags": ["Python"],
+        "image": "images\\password-manager.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Blue J",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat ut justo ac mollis. Pellentesque at ligula in ligula ultrices convallis a in nulla. Nulla id tortor quis justo iaculis mattis. Phasellus in neque ipsum. Fusce sed nisl dui.",
+        "tags": ["HTML", "CSS", "JavaScript", "Firebase"],
+        "image": "images\\blue-j.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Netflix Clone",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat ut justo ac mollis. Pellentesque at ligula in ligula ultrices convallis a in nulla. Nulla id tortor quis justo iaculis mattis. Phasellus in neque ipsum. Fusce sed nisl dui.",
+        "tags": ["HTML", "CSS", "JavaScript", "React"],
+        "image": "images\\netflix-clone.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Random",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat ut justo ac mollis. Pellentesque at ligula in ligula ultrices convallis a in nulla. Nulla id tortor quis justo iaculis mattis. Phasellus in neque ipsum. Fusce sed nisl dui.",
+        "tags": ["HTML", "CSS", "JavaScript", "React"],
+        "image": "images\\netflix-clone.jpg"
+    }  
+]
