@@ -1,18 +1,3 @@
-.nav__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #101010;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav__menu__link {
-  text-decoration: none;
-  color: white;
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -89,5 +74,37 @@ select {
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+body {
+  background-color: #0f0f0f !important;
+  color: #fff !important;
+  font-family: "Roboto Mono" !important;
+}
+
+.whitespace {
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 768) {
+  whitespace {
+    display: none;
+  }
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0f0f0f !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__menu__link {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

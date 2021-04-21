@@ -1,0 +1,18 @@
+// @import '../abstracts/index';
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $main-font;
+}
+
+.whitespace {
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 768) {
+    whitespace {
+        display: none;
+    }
+}
