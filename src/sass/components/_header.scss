@@ -1,0 +1,15 @@
+@import '../abstracts/colors';
+
+.nav {
+    &__menu {
+        display: flex;
+        background-color: $bg-color;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &__link {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
