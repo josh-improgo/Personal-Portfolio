@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&family=Source+Code+Pro&display=swap");
 body {
   background-color: #262626;
   color: #fff !important;
@@ -251,7 +251,7 @@ body {
 }
 
 .project-card__link:hover {
-  color: #8da8d0;
+  color: #8ba7d0;
 }
 
 .project-card__title {
@@ -280,7 +280,7 @@ body {
 .project-card__ic-folder-open {
   font-size: 4em;
   display: none;
-  color: #8da8d0;
+  color: #8ba7d0;
 }
 
 .project-card__footer {
@@ -306,7 +306,7 @@ body {
 }
 
 .project-card:hover .project-card__title {
-  color: #8da8d0;
+  color: #8ba7d0;
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
 }
@@ -325,7 +325,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 4rem;
+  margin: 4rem;
   gap: 2rem;
   opacity: 0;
 }
@@ -470,6 +470,120 @@ body {
   display: grid;
   opacity: 0;
   place-items: center;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 80px;
+}
+
+.contact__header, .contact__sub-header {
+  text-align: center;
+}
+
+.contact__header {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.contact__sub-header {
+  color: #b7b7b7;
+  font-weight: 400;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 30ch;
+  max-width: 70ch;
+  width: 100%;
+  height: 100%;
+}
+
+.contact__form__label {
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.contact__form__input {
+  height: 2rem;
+}
+
+.contact__form__textarea {
+  height: 10ch;
+}
+
+.contact__form__button {
+  margin-top: 2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.1em;
+  background-color: gray;
+  border: 1px solid #fff;
+}
+
+.contact__form__button__span {
+  padding: 0 0.5rem;
+}
+
+.contact__form__button:disabled {
+  background-color: #262626;
+}
+
+.contact__form__button:hover:not([disabled]) {
+  background-color: #4d4d4d;
+  cursor: pointer;
+}
+
+.contact__form__input, .contact__form__textarea {
+  background-color: #b7b7b7;
+  border: none;
+  color: #262626;
+  padding: 0 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.contact__form__textarea {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.contact__form__input:focus, .contact__form__textarea:focus {
+  background-color: #fff;
 }
 
 .home-page {
