@@ -1,0 +1,34 @@
+.other-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin: 0 80px;
+    opacity: 0;
+
+    &__container {
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        & > .project-card {
+            margin: 1rem 1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .other-projects {
+        margin: 0 0;
+    }
+}
+
+.test {
+    height: 500px;
+    font-size: 50px;
+    display: grid;
+    opacity: 0;
+    place-items: center;
+    // background-color: red;
+}

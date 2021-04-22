@@ -1,51 +1,64 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
-
+import { Twirl as Hamburger } from 'hamburger-react';
+import disableScroll from 'disable-scroll';
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(true);
+
+    useEffect(() => {
+        if (isOpen) {
+            disableScroll.on();
+        } else {
+            disableScroll.off();
+        }
+        return;
+    }, [isOpen]);
+
     return (
         <nav className='nav'>
-            <span id='nav__logo'>
-                <a href={ROUTES.HOME}></a>
+            {/* <div className='nav__top'> */}
+            <span className='nav__logo'>
+                <a href={ROUTES.HOME}>josh improgo</a>
             </span>
-            <ul className='nav__menu'>
-                <li>
+
+            <div className='nav__hamburger'>
+                <Hamburger toggled={isOpen} toggle={setIsOpen} />
+            </div>
+            <ul className={`nav__menu ${isOpen ? '' : 'nav__menu--open'}`}>
+                <li className='nav__menu__item'>
                     <NavLink className='nav__menu__link' exact to={ROUTES.HOME}>
-                        Home
+                        home
                     </NavLink>
                 </li>
-                <li>
+                <li className='nav__menu__item'>
                     <NavLink
                         className='nav__menu__link'
                         exact
                         to={ROUTES.PROJECTS}
                     >
-                        Projects
+                        projects
                     </NavLink>
                 </li>
-                <li>
+                <li className='nav__menu__item'>
                     <NavLink
                         className='nav__menu__link'
                         exact
                         to={ROUTES.ABOUT}
                     >
-                        About
+                        about
                     </NavLink>
                 </li>
-                <li>
+                <li className='nav__menu__item'>
                     <NavLink
                         className='nav__menu__link'
                         exact
                         to={ROUTES.CONTACT}
                     >
-                        Contact
+                        contact
                     </NavLink>
                 </li>
             </ul>
-            <div className='nav__toggle'>
-                <div className='span'></div>
-            </div>
         </nav>
     );
 }

@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "githubLink": "",
+        "websiteLink": "",
+        "title": "Project Name",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cum ab error, rerum, vel reiciendis veritatis delectus aperiam",
+        "longDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vel deleniti architecto placeat impedit tempore nulla optio enim aperiam est fugit aut aliquid, pariatur fugiat officiis, quam voluptate expedita atque.\nAdipisci quibusdam saepe nesciunt qui corporis architecto perferendis, porro odio asperiores ea? Quibusdam quidem, impedit, nulla alias, doloremque beatae voluptatem illo dicta consectetur dolores enim. Itaque esse iure eum placeat.\nEst voluptatum, numquam sint ab fuga aut dicta explicabo, ipsum quia fugiat pariatur dolorem laudantium. Facilis id architecto, sapiente, fugiat eos eligendi recusandae non voluptatibus qui quam necessitatibus omnis pariatur",
+        "tags": [
+            "React.js",
+            "Firebase",
+            "SCSS"
+        ]
+    },
+    {
+        "id": 2,
+        "githubLink": "",
+        "websiteLink": "",
+        "title": "Project Name 2",
+        "shortDesc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, commodi?",
+        "longDesc": "",
+        "tags": [
+            "React.js",
+            "Firebase",
+            "SCSS"
+        ]
+    },
+    {
+        "id": 3,
+        "githubLink": "",
+        "websiteLink": "",
+        "title": "Project Name 3",
+        "shortDesc": "Similique vel deleniti architecto placeat impedit tempore nulla optio enim aperiam est fugit aut aliquid, pariatur fugiat officiis.",
+        "longDesc": "",
+        "tags": [
+            "React.js",
+            "Firebase",
+            "SCSS"
+        ]
+    },
+    {
+        "id": 4,
+        "githubLink": "",
+        "websiteLink": "",
+        "title": "Project Name 4",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cum ab error, rerum, vel reiciendis veritatis delectus aperiam assumenda.",
+        "longDesc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vel deleniti architecto placeat impedit tempore nulla optio enim aperiam est fugit aut aliquid, pariatur fugiat officiis, quam voluptate expedita atque.\nAdipisci quibusdam saepe nesciunt qui corporis architecto perferendis, porro odio asperiores ea? Quibusdam quidem, impedit, nulla alias, doloremque beatae voluptatem illo dicta consectetur dolores enim. Itaque esse iure eum placeat.",
+        "tags": [
+            "React.js",
+            "Firebase",
+            "SCSS"
+        ]
+    },
+    {
+        "id": 5,
+        "githubLink": "",
+        "websiteLink": "",
+        "title": "Project Name 5",
+        "shortDesc": "Adipisci quibusdam saepe nesciunt qui corporis architecto perferendis.",
+        "longDesc": "Adipisci quibusdam saepe nesciunt qui corporis architecto perferendis, porro odio asperiores ea? Quibusdam quidem, impedit, nulla alias, doloremque beatae voluptatem illo dicta consectetur dolores enim. Itaque esse iure eum placeat.",
+        "tags": [
+            "React.js",
+            "Firebase",
+            "SCSS"
+        ]
+    }
+]
