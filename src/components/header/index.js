@@ -4,7 +4,7 @@ import * as ROUTES from '../../constants/routes';
 import { Twirl as Hamburger } from 'hamburger-react';
 import disableScroll from 'disable-scroll';
 export default function Header() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         if (isOpen) {

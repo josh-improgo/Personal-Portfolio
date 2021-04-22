@@ -3,11 +3,11 @@ import { ContactPage, AboutPage, HomePage, ProjectPage } from './pages';
 import { Header, Footer } from './components';
 import * as ROUTES from './constants/routes';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { TweenLite, Power3 } from 'gsap';
+import { TweenLite } from 'gsap';
 import { useInView } from 'react-intersection-observer';
 
 function App() {
-    const { ref, inView, entry } = useInView({
+    const { ref, inView } = useInView({
         threshold: 0.5,
     });
 
