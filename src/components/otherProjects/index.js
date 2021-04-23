@@ -8,7 +8,8 @@ export default forwardRef(function OtherProjects(
 ) {
     return (
         <div ref={ref} className={`other-projects ${className}`} {...restProps}>
-            <h5>Other Projects</h5>
+            <h5 className='other-projects__title'>Other Projects</h5>
+            <div className='vertical-spacer'></div>
             <div className='other-projects__container'>
                 {ProjectData.map(({ id, ...restProps }, index) => {
                     return <ProjectCard key={id} {...restProps} />;

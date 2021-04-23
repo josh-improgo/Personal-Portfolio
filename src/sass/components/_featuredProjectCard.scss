@@ -1,0 +1,68 @@
+.featured-project-card {
+    display: flex;
+    // background-color: $gray-800;
+    height: 100%;
+    // position: relative;
+    justify-content: center;
+    &__img {
+        // position: absolute;
+        // align-self: center;
+        width: 600px;
+        height: 450px;
+        // transform: translateX(50%);
+        filter: grayscale(100%);
+    }
+
+    &__inner {
+        z-index: 2;
+        background-color: $gray-900;
+        display: flex;
+        flex-direction: column;
+        max-width: 45ch;
+        margin: 1rem 0;
+        padding: 1rem 2rem;
+        box-shadow: 5px 5px 5px $black;
+        // margin-right: 100px;
+        // float: left;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__left {
+            margin: 0;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $gray-300;
+        font-size: 1.5rem;
+
+        &:nth-last-child(1) {
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            color: $accent-500;
+        }
+    }
+
+    &__description {
+        color: $gray-300;
+        margin: 0.5rem 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    &__footer {
+        color: $gray-700;
+        display: flex;
+        align-items: flex-end;
+        padding-top: 1rem;
+        & > span:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+
+    &__title {
+        text-align: center;
+    }
+    & > .featured-project-card {
+        margin: 4rem 0;
+
+        &:nth-child(2n) {
+            & img {
+                order: 2;
+                // right: 0;
+                // transform: translateX(-50%);
+            }
+        }
+    }
+}

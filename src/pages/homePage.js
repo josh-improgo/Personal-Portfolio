@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Hero, OtherProjects } from '../components';
+import { Hero, OtherProjects, FeaturedProjects } from '../components';
 import { TweenLite } from 'gsap';
 import { useInView } from 'react-intersection-observer';
 
@@ -34,6 +34,7 @@ export default function Home() {
     return (
         <div className='home-page' ref={(e) => (homePage = e)}>
             <Hero />
+            <FeaturedProjects />
             <OtherProjects className='fade--other-projects' ref={ref} />
         </div>
     );
