@@ -11,9 +11,11 @@ export default forwardRef(function OtherProjects(
             <h5 className='other-projects__title'>Other Projects</h5>
             <div className='vertical-spacer'></div>
             <div className='other-projects__container'>
-                {ProjectData.map(({ id, ...restProps }, index) => {
-                    return <ProjectCard key={id} {...restProps} />;
-                })}
+                {ProjectData.filter(({ featured }) => featured === false).map(
+                    ({ id, ...restProps }, index) => {
+                        return <ProjectCard key={id} {...restProps} />;
+                    }
+                )}
             </div>
         </div>
     );

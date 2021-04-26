@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 import { Twirl as Hamburger } from 'hamburger-react';
 import disableScroll from 'disable-scroll';
+import { Link } from 'react-scroll';
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +20,18 @@ export default function Header() {
         <nav className='nav'>
             {/* <div className='nav__top'> */}
             <span className='nav__logo'>
-                <a href={ROUTES.HOME}>josh improgo</a>
+                <Link
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={1000}
+                    className='nav__logo'
+                >
+                    josh improgo
+                </Link>
+                {/* <a href={ROUTES.HOME}>josh improgo</a> */}
             </span>
 
             <div className='nav__hamburger'>
@@ -27,20 +39,47 @@ export default function Header() {
             </div>
             <ul className={`nav__menu ${isOpen ? '' : 'nav__menu--open'}`}>
                 <li className='nav__menu__item'>
-                    <NavLink className='nav__menu__link' exact to={ROUTES.HOME}>
+                    {/* <NavLink className='nav__menu__link' exact to={ROUTES.HOME}> */}
+
+                    {/* <a className='nav__menu__link' href='#home'>
                         home
-                    </NavLink>
+                    </a> */}
+                    <Link
+                        activeClass='active'
+                        to='home'
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={1000}
+                        className='nav__menu__link'
+                    >
+                        home
+                    </Link>
+                    {/* </NavLink> */}
                 </li>
                 <li className='nav__menu__item'>
-                    <NavLink
+                    {/* <NavLink
                         className='nav__menu__link'
                         exact
                         to={ROUTES.PROJECTS}
+                    > */}
+                    {/* <a className='nav__menu__link' href='#projects'>
+                        projects
+                    </a> */}
+                    <Link
+                        activeClass='active'
+                        to='projects'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                        className='nav__menu__link'
                     >
                         projects
-                    </NavLink>
+                    </Link>
+                    {/* </NavLink> */}
                 </li>
-                <li className='nav__menu__item'>
+                {/* <li className='nav__menu__item'>
                     <NavLink
                         className='nav__menu__link'
                         exact
@@ -48,15 +87,41 @@ export default function Header() {
                     >
                         about
                     </NavLink>
+                </li> */}
+                <li className='nav__menu__item'>
+                    <Link
+                        activeClass='active'
+                        to='about'
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={1000}
+                        className='nav__menu__link'
+                    >
+                        about
+                    </Link>
                 </li>
                 <li className='nav__menu__item'>
-                    <NavLink
+                    {/* <NavLink
                         className='nav__menu__link'
                         exact
                         to={ROUTES.CONTACT}
+                    > */}
+                    {/* <a className='nav__menu__link' href='#contact'>
+                        contact
+                    </a> */}
+                    <Link
+                        activeClass='active'
+                        to='contact'
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={1000}
+                        className='nav__menu__link'
                     >
                         contact
-                    </NavLink>
+                    </Link>
+                    {/* </NavLink> */}
                 </li>
             </ul>
         </nav>

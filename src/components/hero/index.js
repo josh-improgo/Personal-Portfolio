@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { CgChevronDown } from 'react-icons/cg';
 import { TweenLite, Power3 } from 'gsap';
+import { Link } from 'react-scroll';
 export default function Hero() {
     let scrollButton = useRef(null);
     let header = useRef(null);
@@ -23,26 +24,44 @@ export default function Hero() {
         console.log('Clicked');
     };
     return (
-        <div className='hero'>
+        <div id='home' className='hero'>
             <div className='hero__container'>
+                {/* <h4>My name is</h4> */}
                 <h1
+                    className='hero__header typewriter anim-typewriter'
                     ref={(e) => {
                         header = e;
                     }}
-                    className='hero__header typewriter anim-typewriter'
                 >
-                    Hello I'm Josh Improgo
+                    Josh Improgo
                 </h1>
             </div>
-            <button
+            {/* <button
                 ref={(e) => {
                     scrollButton = e;
                 }}
                 className='hero__scroll-down'
                 onClick={handleOnClick}
+            > */}
+            <div
+                className='hero__scroll-down'
+                ref={(e) => {
+                    scrollButton = e;
+                }}
             >
-                <CgChevronDown className='hero__scroll-down__ic' />
-            </button>
+                <Link
+                    activeClass='active'
+                    to='projects'
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1000}
+                >
+                    <CgChevronDown className='hero__scroll-down__ic' />
+                </Link>
+            </div>
+
+            {/* </button> */}
         </div>
     );
 }

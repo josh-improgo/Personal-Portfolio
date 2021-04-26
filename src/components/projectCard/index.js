@@ -30,20 +30,26 @@ export default function ProjectCard({
                             <AiOutlineFolderOpen className='project-card__ic-folder-open' />
                         </div>
                         <div className='project-card__top__right'>
-                            <NavLink
-                                className='project-card__link'
-                                exact
-                                to={githubLink}
-                            >
-                                <FiGithub className='project-card__ic-github' />
-                            </NavLink>
-                            <NavLink
-                                className='project-card__link'
-                                exact
-                                to={websiteLink}
-                            >
-                                <FiExternalLink className='project-card__ic-external-link' />
-                            </NavLink>
+                            {githubLink !== '' ? (
+                                <a
+                                    className='project-card__link'
+                                    href={githubLink}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    <FiGithub className='project-card__ic-github' />
+                                </a>
+                            ) : null}
+                            {websiteLink !== '' ? (
+                                <a
+                                    className='project-card__link'
+                                    href={websiteLink}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    <FiExternalLink className='project-card__ic-external-link' />
+                                </a>
+                            ) : null}
                         </div>
                     </div>
                     <div className='project-card__title'>{title}</div>

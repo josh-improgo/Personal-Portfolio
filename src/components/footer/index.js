@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
+import { IoMdMail } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 export default forwardRef(function Footer({ className, ...restProps }, ref) {
@@ -25,14 +26,18 @@ export default forwardRef(function Footer({ className, ...restProps }, ref) {
                 <div className='footer__email'>
                     <div className='footer__inner'>
                         <div className='footer__sub-heading'>say hello</div>
-                        <NavLink
+                        {/* <NavLink
                             className='footer__link'
                             exact
                             to={ROUTES.CONTACT}
-                        >
-                            <AiOutlineMail className='footer__ic' />
-                            <p>josh.improgo@gmail.com</p>
-                        </NavLink>
+                        > */}
+                        <form action='mailto:josh.improgo@gmail.com'>
+                            <button className='footer__btn-link'>
+                                <IoMdMail className='footer__ic' />
+                                <p>josh.improgo@gmail.com</p>
+                            </button>
+                        </form>
+                        {/* </NavLink> */}
                     </div>
                 </div>
             </div>

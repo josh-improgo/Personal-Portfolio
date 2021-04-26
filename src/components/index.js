@@ -6,3 +6,4 @@ export { default as ProjectCard } from './projectCard';
 export { default as Contact } from './contact';
 export { default as FeaturedProjectCard } from './featuredProjectCard';
 export { default as FeaturedProjects } from './featuredProjects';
+export { default as About } from './about';

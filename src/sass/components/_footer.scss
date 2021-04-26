@@ -4,6 +4,7 @@
     margin: 4rem;
     gap: 2rem;
     opacity: 0;
+    font-size: 20px;
     &__spacer {
         height: 2px;
         background-color: $gray-300;
@@ -13,6 +14,7 @@
         text-align: center;
         color: $gray-300;
         width: 100%;
+        font-size: 1rem;
     }
 
     &__sub-heading {
@@ -42,7 +44,8 @@
         align-items: center;
     }
 
-    &__link {
+    &__link,
+    &__btn-link {
         display: flex;
         text-decoration: none;
         color: $white;
@@ -50,10 +53,16 @@
         a,
         p {
             color: $white;
-        }
-
-        p {
             margin-left: 20px;
+        }
+    }
+
+    &__btn-link {
+        border: none;
+        background-color: $gray-900;
+        font-family: $roboto-mono;
+        &:hover {
+            cursor: pointer;
         }
     }
 
