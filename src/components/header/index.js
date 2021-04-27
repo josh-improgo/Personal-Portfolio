@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import * as ROUTES from '../../constants/routes';
 import { Twirl as Hamburger } from 'hamburger-react';
 import disableScroll from 'disable-scroll';
 import { Link } from 'react-scroll';
@@ -94,7 +92,7 @@ export default function Header() {
                         to='about'
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={0}
                         duration={1000}
                         className='nav__menu__link'
                     >

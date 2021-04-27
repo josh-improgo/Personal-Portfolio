@@ -1,8 +1,6 @@
 import React, { forwardRef } from 'react';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
 import { IoMdMail } from 'react-icons/io';
-import { NavLink } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 export default forwardRef(function Footer({ className, ...restProps }, ref) {
     return (

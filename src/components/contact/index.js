@@ -1,11 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
 export default function Contact() {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Clicked');
-    };
-
     return (
         <div id='contact' className='contact'>
             <h2 className='contact__header'>Contact me</h2>

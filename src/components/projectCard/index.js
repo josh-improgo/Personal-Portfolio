@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { AiOutlineFolder, AiOutlineFolderOpen } from 'react-icons/ai';
-import { NavLink } from 'react-router-dom';
 
 export default function ProjectCard({
     id,

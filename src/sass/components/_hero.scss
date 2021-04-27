@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
     margin: 0 80px;
     &__header {
         font-size: 60px;
@@ -12,6 +13,8 @@
         line-height: 1.5;
         letter-spacing: 0.15em;
         opacity: 1;
+        max-width: 40ch;
+        text-align: center;
     }
 
     &__scroll-down {

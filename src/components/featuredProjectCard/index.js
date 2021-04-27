@@ -1,6 +1,5 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { NavLink } from 'react-router-dom';
 
 export default function FeaturedProjectCard({
     githubLink,

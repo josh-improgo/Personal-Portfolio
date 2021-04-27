@@ -20,21 +20,19 @@ export default function Hero() {
         });
     }, []);
 
-    const handleOnClick = () => {
-        console.log('Clicked');
-    };
     return (
         <div id='home' className='hero'>
             <div className='hero__container'>
                 {/* <h4>My name is</h4> */}
-                <h1
+                <div
                     className='hero__header typewriter anim-typewriter'
                     ref={(e) => {
                         header = e;
                     }}
                 >
-                    Josh Improgo
-                </h1>
+                    Hi, I'm Josh Improgo
+                    <br />I make amazing and unique experiences.
+                </div>
             </div>
             {/* <button
                 ref={(e) => {

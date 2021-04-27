@@ -11,6 +11,7 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
     let homePage = useRef(null);
+
     const { ref, inView } = useInView({
         threshold: 0.1,
     });
@@ -30,6 +31,7 @@ export default function Home() {
     };
 
     inView ? fadeIn('.fade--other-projects') : fadeOut('.fade--other-projects');
+    // aboutInView ? fadeIn('.fade--about') : fadeOut('.fade--about');
     useEffect(() => {
         TweenLite.to(homePage, 0, {
             css: {
@@ -40,12 +42,16 @@ export default function Home() {
     return (
         <div className='home-page' ref={(e) => (homePage = e)}>
             <Hero />
-            <FeaturedProjects />
-            <OtherProjects className='fade--other-projects' ref={ref} />
+            <div id='projects'>
+                <FeaturedProjects />
+                <OtherProjects className='fade--other-projects' ref={ref} />
+            </div>
             <div className='vertical-spacer'></div>
-            <About />
+            <div id='about'>
+                <About />
+            </div>
             <div className='vertical-spacer'></div>
-            <Contact />
+            <Contact className='fade--contact fade--other-projects' />
         </div>
     );
 }
