@@ -1,0 +1,23 @@
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+    font-size: 64px;
+
+    &__title {
+        text-align: center;
+        font-size: 1em;
+        color: $gray-300;
+    }
+    & > .featured-project-card {
+        margin: 4rem 0;
+        font-size: initial;
+        &:nth-child(2n) {
+            & img {
+                order: 2;
+                // right: 0;
+                // transform: translateX(-50%);
+            }
+        }
+    }
+}

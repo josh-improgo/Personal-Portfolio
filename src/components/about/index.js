@@ -1,18 +1,22 @@
-import React from 'react'
-import { Container, Title, BackgroundText, Frame } from './styles/about'
+import React from 'react';
+export default function About() {
+    let image = '/images/profile-picture.jpg';
 
-export default function About({children, ...restProps}) {
-    return <Container {...restProps}>{children}</Container>
-}
+    return (
+        <div className='about'>
+            <h2 className='about__header'>About me</h2>
+            <img src={image} alt='' className='about__img' />
 
-About.Title = function AboutTitle({children, ...restProps}) {
-    return <Title {...restProps}>{children}</Title>
-}
-
-About.BackgroundText = function AboutBackgroundText({children, ...restProps}) {
-    return <BackgroundText {...restProps}>{children}</BackgroundText>
-}
-
-About.Frame = function AboutFrame({children, ...restProps}) {
-    return <Frame {...restProps}>{children}</Frame>
+            <div className='about__container'>
+                <h3 className='about__sub-header'>
+                    Full-Stack Developer / QC Student
+                </h3>
+                <p className='about__text'>
+                    I have a craving for learning new technologies and a knack
+                    for writing code that solves problems and delivers unique
+                    experiences.
+                </p>
+            </div>
+        </div>
+    );
 }

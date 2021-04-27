@@ -1,7 +1,9 @@
-export { default as About } from './about'
-export { default as Contact } from './contact'
-export { default as Footer } from './footer'
-export { default as Header } from './header'
-export { default as Main } from './main'
-export { default as Project } from './project'
-export { default as Skills } from './skills'
+export { default as Header } from './header';
+export { default as Hero } from './hero';
+export { default as OtherProjects } from './otherProjects';
+export { default as Footer } from './footer';
+export { default as ProjectCard } from './projectCard';
+export { default as Contact } from './contact';
+export { default as FeaturedProjectCard } from './featuredProjectCard';
+export { default as FeaturedProjects } from './featuredProjects';
+export { default as About } from './about';

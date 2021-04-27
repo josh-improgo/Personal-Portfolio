@@ -1,0 +1,185 @@
+[
+    {
+        "id": 1,
+        "githubLink": "https://github.com/4Baozi/GameHouse",
+        "websiteLink": "",
+        "featured": true,
+        "img": "/images/gamehouse 1.png",
+        "title": "Gamehouse",
+        "shortDesc": "A web application allowing game enthusiasts to enter a room to chat & collaborate in an online 3D environment.",
+        "longDesc": "",
+        "tags": [
+            "React",
+            "Three.js",
+            "Socket.IO",
+            "Node"
+        ]
+    },
+    {
+        "id": 2,
+        "githubLink": "https://github.com/josh-improgo/Netflix-Clone",
+        "websiteLink": "https://netflix-clone-3cbf3.web.app/",
+        "featured": true,
+        "img": "/images/netflix-clone 1.png",
+        "title": "Netflix Clone",
+        "shortDesc": "Built a clone of the popular Netflix app that allows users to browse through movies & log in w/ Firebase authentication.",
+        "longDesc": "",
+        "tags": [
+            "React",
+            "Firebase"
+        ]
+    },
+    {
+        "id": 3,
+        "githubLink": "https://github.com/jlin180/ctpHacks",
+        "websiteLink": "https://devpost.com/software/blue-j",
+        "featured": true,
+        "img": "/images/blue-j-jobs 1.png",
+        "title": "Blue J",
+        "shortDesc": "A job-board web app that helps new graduates w/ their job hunt to get entry level positions.",
+        "longDesc": "",
+        "tags": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ]
+    },
+    {
+        "id": 4,
+        "githubLink": "https://github.com/josh-improgo/React-Movie-Search-App",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "React Movie Search App",
+        "shortDesc": "A web application made w/ React.js that uses the Movie DB API to search for movies.",
+        "longDesc": "",
+        "tags": [
+            "React",
+            "MovieDB API"
+        ]
+    },
+    {
+        "id": 5,
+        "githubLink": "https://github.com/josh-improgo/React-Spotify-Song-Search",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Spotify Search App",
+        "shortDesc": "A simple Spotify Web React app that uses Spotify's Web API to search for music.",
+        "longDesc": "",
+        "tags": [
+            "React",
+            "Spotify Web API"
+        ]
+    },
+    {
+        "id": 6,
+        "githubLink": "https://github.com/josh-improgo/Inverted-Index",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Inverted Index",
+        "shortDesc": "A document retrieval system that allows users to conduct fast full text searches of web pages.",
+        "longDesc": "",
+        "tags": [
+            "Python",
+            "Java"
+        ]
+    },
+    {
+        "id": 7,
+        "githubLink": "",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Password Manager",
+        "shortDesc": "A python console program that manages & stores strong passwords & backup codes.",
+        "longDesc": "",
+        "tags": [
+            "Python"
+        ]
+    },
+    {
+        "id": 8,
+        "githubLink": "https://github.com/josh-improgo/Sudoku-Solver",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Sudoku Solver",
+        "shortDesc": "A Sudoku game built on Python's Tkinter GUI that can generate solutions to Sudoku boards w/ a backtracking algorithm.",
+        "longDesc": "",
+        "tags": [
+            "Python"
+        ]
+    },
+    {
+        "id": 9,
+        "githubLink": "",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "EduTech Website",
+        "shortDesc": "A customized Top Hat website clone that allows professors & students to interact w/ course content.",
+        "longDesc": "",
+        "tags": [
+            "HTML",
+            "PHP",
+            "SQL",
+            "CSS"
+        ]
+    },
+    {
+        "id": 10,
+        "githubLink": "",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Remote Control Car",
+        "shortDesc": "Built a small autonomous car that collects data & traverses through obstacles w/ sensors & Bluetooth adapters.",
+        "longDesc": "",
+        "tags": [
+            "Arduino"
+        ]
+    },
+    {
+        "id": 11,
+        "githubLink": "https://github.com/josh-improgo/Instagram_App",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Instagram Clone",
+        "shortDesc": "An Android application that supports a photo sharing environment for users to view & post photos using Parse Server.",
+        "longDesc": "",
+        "tags": [
+            "Java",
+            "Android"
+        ]
+    },
+    {
+        "id": 12,
+        "githubLink": "https://github.com/josh-improgo/Flicks",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Flicks App",
+        "shortDesc": "An Android application that allows users to view current movies playing in theaters w/ the Movie Database API.",
+        "longDesc": "",
+        "tags": [
+            "Java",
+            "Android"
+        ]
+    },
+    {
+        "id": 13,
+        "githubLink": "https://github.com/josh-improgo/TicTacToeJAVAFX",
+        "websiteLink": "",
+        "featured": false,
+        "img": "http://unsplash.it/450/300?random&gravity=center",
+        "title": "Tic Tac Toe",
+        "shortDesc": "A Tic Tac Toe game using JavaFX GUI & using heuristics to generate optimal moves for the computer against users.",
+        "longDesc": "",
+        "tags": [
+            "Java"
+        ]
+    }
+]

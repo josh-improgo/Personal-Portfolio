@@ -1,0 +1,105 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin: 2rem 80px;
+    font-size: 64px;
+
+    &__header,
+    &__sub-header {
+        text-align: center;
+    }
+    &__header {
+        color: $gray-300;
+        font-size: 1em;
+        margin-bottom: 1rem;
+    }
+
+    &__sub-header {
+        // color: $gray-300;
+        // font-weight: 400;
+        font-size: 0.5em;
+        color: white;
+        font-weight: 400;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        // min-width: 30ch;
+        // max-width: 70ch;
+        width: 100%;
+        height: 100%;
+        // justify-content: center; // --contact2
+        // align-items: flex-start;
+        align-items: center;
+        &__label {
+            padding: 1.5rem 0;
+            color: $white;
+        }
+
+        &__input {
+            height: 2rem;
+        }
+
+        &__textarea {
+            height: 10ch;
+        }
+
+        &__button {
+            margin-top: 2rem;
+            // align-self: flex-end; // --contact2
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // color: $gray-900;
+            color: $white;
+            font-family: $roboto-mono;
+            letter-spacing: 0.1em;
+            // background-color: $gray-700;
+            background-color: $gray-700;
+            // background-color: $accent-500;
+
+            border: 1px solid $white;
+
+            &__span {
+                padding: 0 0.5rem;
+            }
+
+            &:disabled {
+                background-color: $gray-900;
+            }
+            &:hover:not([disabled]) {
+                // background-color: $accent-700;
+                background-color: $gray-800;
+
+                cursor: pointer;
+            }
+        }
+        &__input,
+        &__textarea {
+            background-color: $gray-300;
+            border: none;
+            color: $gray-900;
+            padding: 0 1rem;
+            font-family: $roboto-mono;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+
+        &__textarea {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        &__input:focus,
+        &__textarea:focus {
+            background-color: $white;
+        }
+    }
+}

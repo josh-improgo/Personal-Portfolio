@@ -1,34 +1,29 @@
-import React from 'react'
-import { Container, Form, Title, BackgroundText, Label, Input, TextArea, Button } from './styles/contact'
+import React, { useState } from 'react';
+import { AiOutlineSend } from 'react-icons/ai';
+export default function Contact() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Clicked');
+    };
 
-export default function Contact({children, ...restProps}) {
-    return <Container {...restProps}>{children}</Container>
-}
-
-Contact.Form = function ContactForm({children, ...restProps}) {
-    return <Form {...restProps}>{children}</Form>
-}
-
-Contact.Title = function ContactTitle({children, ...restProps}) {
-    return <Title {...restProps}>{children}</Title>
-}
-
-Contact.BackgroundText = function ContactBackgroundText({children, ...restProps}) {
-    return <BackgroundText {...restProps}>{children}</BackgroundText>
-}
-
-Contact.Label = function ContactLabel({children, ...restProps}) {
-    return <Label {...restProps}>{children}</Label>
-}
-
-Contact.Input = function ContactInput({...restProps}) {
-    return <Input {...restProps} />
-}
-
-Contact.TextArea = function ContactTextArea({children, ...restProps}) {
-    return <TextArea {...restProps}>{children}</TextArea>
-}
-
-Contact.Button = function ContactButton({children, ...restProps}) {
-    return <Button {...restProps}>{children}</Button>
+    return (
+        <div id='contact' className='contact'>
+            <h2 className='contact__header'>Contact me</h2>
+            <h5 className='contact__sub-header'>
+                Got an interesting project? Let's work something out!
+            </h5>
+            <form
+                className='contact__form'
+                action='mailto:josh.improgo@gmail.com'
+                // onSubmit={handleSubmit}
+            >
+                <button className='contact__form__button'>
+                    <span className='contact__form__button__span'>
+                        Email me!
+                    </span>
+                    <AiOutlineSend />
+                </button>
+            </form>
+        </div>
+    );
 }
