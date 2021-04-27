@@ -5,8 +5,11 @@ import * as ROUTES from './constants/routes';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { TweenLite } from 'gsap';
 import { useInView } from 'react-intersection-observer';
+import { gsap } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin';
 
 function App() {
+    gsap.registerPlugin(CSSPlugin);
     const { ref, inView } = useInView({
         threshold: 0.5,
     });
